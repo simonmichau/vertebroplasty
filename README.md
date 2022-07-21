@@ -20,9 +20,13 @@ Button 1) Open and load .raw file displaying a CT scan. This will also
 - give a 3D visualization of the scan in frame B
 - show two intersecting crosssections that display the position of the instrument in the model in frames C and D
 Try it out with the included SpineModel_0.365_0.325_1_400_400_400.raw
+
 Button 2) Update 3D model (e.g. after updating the start value and window width for windowing)
+
 Button 3) [Region growing](https://en.wikipedia.org/wiki/Region_growing). Select a seed to start from by clicking a voxel in frame A or B. The selected voxel is stated as 'Local coordinates'. From this seed the algorithm will iteratively add only those voxels that are over the specified threshold, therefore isolating the selected (bone)structure.
+
 Button 4) Registers the markers of the pad on the patients back to be able to synchronize the instrument position with the position in the scan. Will also display the markers and their centroids in frame B.
+
 Button 5) Update crosssections. Only necessary if 'Auto update crosssections' isn't checked. Will update frames C and D with the new given values.
 
 Using the sliders 'Start value' and 'Window width' we can select the windowing of the scan. This is necessary because the scan is more precise than a 256 bit grascale image could visualize. By windowing different density regions like bone or tissues can be inspected alone. Learn more [here](https://en.wikipedia.org/wiki/Hounsfield_scale).
